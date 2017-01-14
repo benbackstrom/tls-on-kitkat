@@ -38,3 +38,15 @@ captures/
 
 # Keystore files
 *.jks
+
+/.idea/libraries
+/.idea
+.DS_Store
+/captures
+.externalNativeBuild
+app/src/androidTest
+app/src/test
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
