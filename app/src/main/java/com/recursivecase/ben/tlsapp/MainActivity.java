@@ -63,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 if (responseCode != HttpsURLConnection.HTTP_OK) {
                     throw new IOException("HTTP error code: " + responseCode);
                 }
-                String mimeType = connection.getContentType();
-                response = new WebResourceResponse(mimeType, "utf-8", connection.getInputStream());
+                response = new WebResourceResponse("text/html", "utf-8", connection.getInputStream());
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
